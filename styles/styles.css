@@ -1,0 +1,191 @@
+:root{
+    /* I use indexW for width */
+    --indexW: 1vw; 
+    /* And indexH for height */
+    --indexH: 1vh;
+    /* This variable I use for text */
+    --index: calc(1vw + 1vh);
+}
+
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(var(--index)*.9);
+    background-color: #F6F6FA;
+    margin: calc(var(--indexH)*6.4) calc(var(--indexW)*3.13);
+    /* margin: 40px 40px; */
+}
+
+body a{
+    font-size: calc(var(--index)*.9);
+}
+
+/* Styles for general structure */
+
+.mainwreper{
+    width: calc(var(--indexW)*93.5);
+    /* width: 1200px; */
+    
+    display: grid;
+    grid-template-columns: 1fr minmax(1fr 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.sidebar{
+    background-color: #E0EBFE;
+    width: calc(var(--indexW)*28.9);
+    /* width: 370px; */
+    color: #161D2A;
+}
+
+/* Styles for detailes of sidebar */
+
+.sidebar img{
+    width: calc(var(--indexW)*28.9);
+    margin-top: calc(var(--indexH)*6.45);
+     /* margin-top: 40px; */
+    border-radius: 10vw;
+}
+
+/* Styles for detailes of blocks Soft Skills and Tech Skills*/
+/* :root{
+    --indexW: 1vw; 
+    --indexH: 1vh;
+    --index: calc(1vw + 1vh);
+}s
+Ці обчислення я зробив для того, аби закріпити адаптивну верстку */
+
+.sidebar div{
+    margin-left: calc(var(--indexW)*3.1243);
+    /* margin-left: 40px; */
+    margin-top: calc(var(--indexH)*7.74);
+    /* margin-top: 48px; */
+}
+
+.sidebar div h2{
+    margin-bottom: calc(var(--indexH)*1.29);
+}
+
+.sidebar div li{
+    margin-left: calc(var(--index)*(-1.2));
+    color: #6D9BF5;
+}
+
+.li_items{
+    color: #161D2A;
+}
+
+.sidebar div ul{
+    margin: 0;
+}
+
+
+/* Styles for detailes of block Contacts */
+
+.sidebar p{
+    margin: var(--indexH) auto;
+    /* margin: 0; */
+}
+
+.sidebar p span{
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+.firsta{
+    text-decoration: none;
+    color: #161D2A;
+    cursor: default;
+}
+
+.seconda{
+    color: #2979FF ;
+}
+
+/* styles for block main_content */
+
+.main_content{
+    background-color: #FFFFFF;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-top: calc(var(--indexH)*17);
+    /* padding-top: 104px; */
+    padding-left: calc(var(--indexW)*6.8735);
+    color: #595959;
+} 
+
+/* styles for details of block main_content */
+
+ .main_content h1,  .main_content h2, .main_content h4{
+    color: black;
+}
+
+.main_content ol li, .main_content ul li{
+    margin-left: calc(var(--index)*(-1.2));
+}
+
+.about_me h1{
+    padding: calc(var(--indexH)*0.1) 0;
+    font-size: calc(var(--index)*3);
+}
+
+.main_content h2{
+    padding-top: calc(var(--indexH)*9.1538);
+}
+
+.projects li{
+    color: black;
+    font-weight: bold;
+    padding-bottom: 1vh;
+}
+
+.projects a{
+    font-weight: 400;
+    color: #005FFF;
+    padding-left: calc(var(--indexW)*1.0935);
+}
+
+.projects span{
+    font-weight: 400;
+    color: #595959;
+}
+
+.work_Experience h2{
+    padding-bottom: calc(var(--indexH)*2.61538);
+}
+
+ .bluetext{
+    color: #6D9BF5;
+    font-weight: bold;
+}
+
+.helping_Text{
+    color: #A8A8A8;
+}
+
+.helping_Text span{
+    color: #000;
+}
+
+.work_Experience .helping_Text{
+    margin-top: -1vh;
+}
+
+.work_Experience li{
+    padding-left: calc(var(--indexW)*1.0935);
+}
+
+
+.education h2, .education h4, .education p{
+    margin: 0;
+    padding: calc(var(--indexH)*2.61538) 0 0 0;
+}
+
+.education .helping_Text{
+    padding-bottom: calc(var(--indexH)*17);
+    /* padding-bottom: 104px; */
+}
